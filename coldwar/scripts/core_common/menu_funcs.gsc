@@ -139,18 +139,6 @@ function func_zmignoreme(item) {
     return true;
 }
 
-function func_invulnerability(item) {
-    if (isdefined(self.tool_invulnerability) && self.tool_invulnerability) {
-        self.tool_invulnerability = false;
-        self disableinvulnerability();
-        self val::set(#"oob", "disable_oob", false);
-    } else {
-        self.tool_invulnerability = true;
-    }
-    item.activated = self.tool_invulnerability;
-    return true;
-}
-
 function func_drop(item) {
     weapon = self getcurrentweapon();
     if (isdefined(weapon) && self hasweapon(weapon)) {

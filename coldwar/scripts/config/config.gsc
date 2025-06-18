@@ -6,10 +6,9 @@ function AtianMenuConfig() {
     self.fly_speed_fast = 60;
 
     self.preloaded_menus = array(
-       //"tool_menu::Ammos",
-       //"tool_zm::Max Points",
-       //"tool_zm::Ignore me",
-       //"tool_menu::Invulnerability"
+       "tool_menu::Invulnerability",
+       "tool_menu::Max Ammo",
+       "tool_menu::Max Points"
     );
 
     // set starting points

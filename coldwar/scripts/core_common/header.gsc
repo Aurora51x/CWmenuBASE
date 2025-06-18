@@ -1,3 +1,25 @@
+/*
+    Menu:                 AIO Menu Base
+    Developer:            Aurora51x
+    Version:              0.1.0.0
+    major update, minor updates, patch update
+    Project Start Date:   6/16/25
+    Initial Release Date: 0/0/00
+
+    Credits:
+    - Aurora51x - Project Developer
+    - Ate48 - Atian Menu CW Source / Menu Developer
+    - Ate48 - Compiler
+
+    0.1.0.0
+    - Removed All Menu Options
+    - Main Menu Struction More Read-able
+    - Changed The Color Scheme Red Cursor & -* Cursor
+
+    Needs Fixing +/ Ideas
+    - Player Menu Needs To Be Added
+*/
+
 #include scripts\core_common\struct;
 #include scripts\core_common\array_shared;
 #include scripts\core_common\callbacks_shared;
@@ -8,6 +30,7 @@
 #include scripts\core_common\util_shared;
 #include scripts\core_common\player\player_stats;
 #include scripts\core_common\spawner_shared;
+#include scripts\zm_common\zm_powerups;
 
 #namespace atianmenu;
 
@@ -80,7 +103,7 @@ function on_player_connect() {
     }
 
     // init menu system
-    if (!self init_menu("Atian Menu CW")) {
+    if (!self init_menu("AIO Menu Base")) {
         return;
     }
     
